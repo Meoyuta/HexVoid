@@ -1,0 +1,29 @@
+{
+  "parent": "hexvoid:lore/research",
+  "criteria": {
+    "find_broken": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.hexvoid:findbroken.desc"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "minecraft:cobweb"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.hexvoid:findbroken"
+    }
+  },
+  "requirements": [
+    [
+      "find_broken"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

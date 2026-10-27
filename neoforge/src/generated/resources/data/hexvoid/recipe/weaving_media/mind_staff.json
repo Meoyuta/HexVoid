@@ -1,0 +1,13 @@
+{
+  "type": "hexvoid:weaving_media",
+  "input": {
+    "item": "hexvoid:mind_staff"
+  },
+  "output": {
+    "components": {
+      "hexvoid:can_store_media": true
+    },
+    "count": 1,
+    "id": "hexvoid:mind_staff"
+  }
+}

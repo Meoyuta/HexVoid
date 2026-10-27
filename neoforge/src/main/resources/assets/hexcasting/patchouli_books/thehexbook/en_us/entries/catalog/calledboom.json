@@ -1,0 +1,21 @@
+{
+  "name": "hexvoid.entry.calledboom",
+  "category": "hexcasting:catalog",
+  "icon": "minecraft:tnt",
+  "sortnum": 4,
+  "advancement": "hexvoid:findbroken",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexvoid.page.patterns.calledboom1"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexvoid:op_called_boom",
+      "anchor": "hexvoid:op_called_boom",
+      "input": "vec, number",
+      "output": "",
+      "text": "hexvoid.page.patterns.calledboom2"
+    }
+  ]
+}

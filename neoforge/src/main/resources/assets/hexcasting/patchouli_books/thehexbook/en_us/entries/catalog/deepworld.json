@@ -1,0 +1,25 @@
+{
+  "name": "hexvoid.entry.deepworld",
+  "category": "hexcasting:catalog",
+  "icon": "minecraft:bedrock",
+  "sortnum": 0,
+  "advancement": "hexvoid:lore/research",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexvoid.page.catalog.deepworld"
+    },
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexvoid:channel_to_void",
+      "anchor": "hexvoid:channel_to_void",
+      "input": "",
+      "output": "",
+      "text": "hexvoid.page.deepworld.channel_to_world1"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "hexvoid.page.deepworld.channel_to_world2"
+    }
+  ]
+}

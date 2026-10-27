@@ -1,0 +1,21 @@
+{
+  "name": "hexvoid.entry.legacy_of_vanished",
+  "category": "hexcasting:research",
+  "icon": "minecraft:bedrock",
+  "sortnum": 5,
+  "advancement": "hexvoid:research",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexvoid.page.research.legacy_of_vanished"
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "世界深处",
+      "text": "",
+      "entries": [
+        "hexcasting:catalog/weaving_media"
+      ]
+    }
+  ]
+}

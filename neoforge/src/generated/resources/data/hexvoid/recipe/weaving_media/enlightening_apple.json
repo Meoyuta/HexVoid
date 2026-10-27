@@ -1,0 +1,13 @@
+{
+  "type": "hexvoid:weaving_media",
+  "input": {
+    "item": "hexvoid:enlightening_apple"
+  },
+  "output": {
+    "components": {
+      "hexvoid:weaved": true
+    },
+    "count": 1,
+    "id": "hexvoid:enlightening_apple"
+  }
+}

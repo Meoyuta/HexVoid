@@ -1,0 +1,42 @@
+{
+  "parent": "hexvoid:lore/research",
+  "criteria": {
+    "try_channel": {
+      "conditions": {
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "expected": true,
+                "id": "hexvoid:channel_to_void"
+              }
+            ]
+          },
+          "blocked": false
+        }
+      },
+      "trigger": "minecraft:entity_hurt_player"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.hexvoid:root.desc"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "minecraft:bedrock"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.hexvoid:root"
+    }
+  },
+  "requirements": [
+    [
+      "try_channel"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

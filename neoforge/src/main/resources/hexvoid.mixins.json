@@ -1,0 +1,25 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "mys.hexvoid.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "hexvoid.refmap.json",
+  "mixins": [
+    "AnvilMenuMixin",
+    "EnchantCommandMixin",
+    "EnchantmentMixin",
+    "ForgeXplatImplMixin",
+    "PlayerMixin",
+    "StickUseMixin",
+    "VoidShardItemMixin"
+  ],
+  "client": [
+    "GuiSpellcastingMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

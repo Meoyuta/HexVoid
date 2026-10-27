@@ -1,0 +1,13 @@
+{
+  "type": "hexvoid:additem",
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:chests/buried_treasure"
+    },
+    {
+      "chance": 0.001,
+      "condition": "minecraft:random_chance"
+    }
+  ]
+}

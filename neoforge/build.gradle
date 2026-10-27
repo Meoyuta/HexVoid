@@ -1,0 +1,118 @@
+import java.util.zip.ZipEntry
+import java.util.zip.ZipInputStream
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm'
+}
+architectury {
+    platformSetupLoomIde()
+    neoForge()
+}
+
+repositories {
+    exclusiveContent {
+        forRepository {
+            ivy {
+                name = 'BlameJaredCI-Hexcasting'
+                url = "https://ci.blamejared.com/job/petrakat/job/Hexcasting/job/1.21/${rootProject.hexcasting_ci_build}/artifact/Neoforge/build/libs"
+                patternLayout {
+                    artifact '[module]-[revision](-[classifier]).[ext]'
+                }
+                metadataSources { artifact() }
+            }
+        }
+        filter { includeModule('at.petra-k', 'hexcasting-neoforge') }
+    }
+    maven { url = 'https://maven.theillusivec4.top/' }
+    maven {
+        url = 'https://thedarkcolour.github.io/KotlinForForge/'
+        content { includeGroup 'thedarkcolour' }
+    }
+    mavenCentral()
+}
+
+dependencies {
+    neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
+    modImplementation "dev.architectury:architectury-neoforge:$rootProject.architectury_api_version"
+
+    // NeoForge 1.21.1 release jars already use Mojang names. Like hexextra,
+    // consume the complete jar directly: Loom's mod remapper rejects the
+    // bundled named access widener. Parchment adds parameter/documentation data.
+    // Ivy supplies artifact metadata only; declare required mods below.
+    implementation "at.petra-k:hexcasting-neoforge:$rootProject.hexcasting_version"
+    implementation('thedarkcolour:kotlinforforge-neoforge:5.8.0') {
+        exclude group: 'net.neoforged.fancymodloader', module: 'loader'
+    }
+    modImplementation 'at.petra-k:paucal:0.7.1-pre-27+1.21.1-neoforge'
+    modImplementation 'vazkii.patchouli:Patchouli:1.21-88-NEOFORGE-SNAPSHOT'
+    modImplementation 'com.illusivesoulworks.caelus:caelus-neoforge:7.0.1+1.21.1'
+    modImplementation 'com.samsthenerd.inline:inline-neoforge:1.21.1-1.2.2-74'
+    modRuntimeOnly 'me.shedaniel.cloth:cloth-config-neoforge:15.0.140'
+    modImplementation 'com.github.Virtuoel:Pehkui:3.8.3-1.21-neoforge'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+}
+
+sourceSets.main.resources.srcDir 'src/generated/resources'
+sourceSets.main.resources.exclude '.cache/**'
+
+def hexcastingSourceCommit = '7d5c1576c6bd1044bfe438ad8a8cc7e39529ccb4'
+def hexcastingIdeaSourcesDir = rootProject.layout.projectDirectory.dir('ide-sources/hexcasting')
+
+tasks.register('prepareHexcastingIdeaSources') {
+    description = 'Downloads the pinned HexCasting sources for IDEA navigation.'
+    outputs.dir(hexcastingIdeaSourcesDir)
+    doLast {
+        def outputDir = hexcastingIdeaSourcesDir.asFile
+        if (outputDir.exists()) {
+            outputDir.deleteDir()
+        }
+        outputDir.mkdirs()
+
+        def archiveUrl = new URI("https://github.com/FallingColors/HexMod/archive/${hexcastingSourceCommit}.zip").toURL()
+        def sourcePattern = ~/(?i).+\/(?:Common|Neoforge)\/src\/main\/java\/(.+)/
+        def zipStream = new ZipInputStream(new BufferedInputStream(archiveUrl.openStream()))
+        try {
+            ZipEntry entry
+            while ((entry = zipStream.nextEntry) != null) {
+                def match = sourcePattern.matcher(entry.name)
+                if (entry.directory || !match.find()) {
+                    continue
+                }
+                def destination = new File(outputDir, match.group(1))
+                destination.parentFile.mkdirs()
+                destination.withOutputStream { output -> output << zipStream }
+            }
+        } finally {
+            zipStream.close()
+        }
+    }
+}
+
+idea {
+    module {
+        sourceDirs += files(hexcastingIdeaSourcesDir)
+    }
+}
+
+tasks.matching { it.name in ['idea', 'ideaSyncTask'] }.configureEach {
+    dependsOn tasks.named('prepareHexcastingIdeaSources')
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('META-INF/neoforge.mods.toml') {
+        expand version: project.version
+    }
+}
+
+loom {
+    runs {
+        data {
+            data()
+            programArgs '--mod', 'hexvoid', '--all', '--output', file('src/generated/resources').absolutePath, '--existing', file('src/main/resources').absolutePath
+        }
+    }
+}
+kotlin {
+    jvmToolchain(21)
+}

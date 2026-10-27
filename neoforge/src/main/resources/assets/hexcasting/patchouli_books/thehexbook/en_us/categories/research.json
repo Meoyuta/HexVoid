@@ -1,0 +1,7 @@
+{
+  "name": "hexvoid.category.research",
+  "icon": "hexvoid:lore_fragment",
+  "description": "hexvoid.category.research.desc",
+  "advancement": "hexvoid:lore/research",
+  "sortnum": 998
+}

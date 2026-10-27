@@ -1,0 +1,20 @@
+{
+  "name": "hexvoid.entry.enlightening_apple",
+  "icon": "hexvoid:enlightening_apple",
+  "category": "hexcasting:catalog",
+  "sortnum": 1,
+  "advancement": "hexvoid:lore/research",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexvoid.page.items.enlightening_apple1"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "hexvoid:enlightening_apple",
+      "text": "hexvoid.page.items.enlightening_apple2"
+    }
+  ]
+}
+
+

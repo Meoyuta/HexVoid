@@ -1,0 +1,29 @@
+{
+  "parent": "hexvoid:lore/research",
+  "criteria": {
+    "exchange_life": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.hexvoid:exchangelife.desc"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "id": "minecraft:brain_coral_block"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.hexvoid:exchangelife"
+    }
+  },
+  "requirements": [
+    [
+      "exchange_life"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,34 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="hexvoid"
+version="${version}"
+displayName="HexVoid"
+authors="mys"
+description='''A HexCasting addon.'''
+
+[[mixins]]
+config="hexvoid.mixins.json"
+
+[[dependencies.hexvoid]]
+modId="neoforge"
+type="required"
+versionRange="[21.1.172,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.hexvoid]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.hexvoid]]
+modId="hexcasting"
+type="required"
+versionRange="[0.12.0,)"
+ordering="AFTER"
+side="BOTH"

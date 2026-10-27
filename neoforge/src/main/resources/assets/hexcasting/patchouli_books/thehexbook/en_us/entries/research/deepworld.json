@@ -1,0 +1,24 @@
+{
+  "name": "hexvoid.entry.research.deepworld",
+  "category": "hexcasting:research",
+  "icon": "minecraft:bedrock",
+  "sortnum": 0,
+  "advancement": "hexvoid:lore/research",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexvoid.page.research.deepworld"
+    },
+    {
+      "type": "patchouli:relations",
+      "title": "世界深处",
+      "text": "",
+      "entries": [
+        "hexcasting:catalog/deepworld",
+        "hexcasting:catalog/clear_draws",
+        "hexcasting:catalog/mind_staff",
+        "hexcasting:catalog/enlightening_apple"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "hexvoid.entry.mind_staff",
+  "icon": "hexvoid:mind_staff",
+  "category": "hexcasting:catalog",
+  "sortnum": 2,
+  "advancement": "hexvoid:lore/research",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "hexvoid.page.items.mind_staff1"
+    },
+    {
+      "type": "spotlight",
+      "title": "hexvoid.entry.mind_staff",
+      "link_recipe": true,
+      "item": "hexvoid:mind_staff",
+      "scale": 1.2,
+      "text": "hexvoid.page.items.mind_staff2"
+    }
+  ]
+}
+
+

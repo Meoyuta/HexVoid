@@ -1,0 +1,87 @@
+{
+  // items
+  "item.hexvoid.test_item": "测试物品",
+  "item.hexvoid.enlightening_apple": "启迪禁果",
+  "item.hexvoid.enlightening_apple.weaved": "启迪苹果",
+  "item.hexvoid.lore_fragment": "虚咒残卷",
+  "item.hexvoid.mind_staff": "凝识法杖",
+  "item.hexvoid.void_shard": "虚空裂片",
+  "item.hexvoid.stable_void_shard": "稳态虚空裂片",
+  // blocks
+  "block.hexvoid.test_block": "测试方块",
+  // tooltip
+  "tooltip.hexvoid.lightening_apple.1": "制造完全的产物，已趋于完美",
+  "tooltip.hexvoid.lightening_apple.2": "无副作用地获得彼端的知识",
+  // advancement
+  "advancement.hexvoid:lore/research": "虚咒残卷",
+  "advancement.hexvoid:lore/research.desc": "找到虚咒残卷",
+  "advancement.hexvoid:root": "消泯者研究",
+  "advancement.hexvoid:root.desc": "到达世界的最深处并尝试验证研究是否有效",
+  "advancement.hexvoid:findbroken": "破碎世界",
+  "advancement.hexvoid:findbroken.desc": "发现世界中的摧解现象",
+  "advancement.hexvoid:exchangelife": "交换生命",
+  "advancement.hexvoid:exchangelife.desc": "将全部的意识消耗殆尽，使得生命垂危",
+  // actions
+  "hexcasting.action.hexvoid:op_called_boom": "空间撕裂",
+  "hexcasting.action.hexvoid:op_call_of_silent": "消隐之呼唤",
+  "hexcasting.action.hexvoid:channel_to_void": "沟通虚空",
+  "hexcasting.action.hexvoid:clear_draws": "整理思维",
+  "hexcasting.action.hexvoid:weaving_media": "织入媒质",
+  "hexcasting.action.hexvoid:healing": "重塑形体",
+  // death
+  "death.attack.hexvoid.death.call_of_silent": "无位生灵或意识 %1$s 迷失在了消隐的迷途中",
+  "death.attack.hexvoid.death.channel_to_void": "%1$s 疲于探寻虚空",
+  "death.attack.hexvoid.death.overknowledge": "%1$s 被过量的禁忌知识淹没了",
+  // msg
+  "hexvoid.msg.item.lore_fragment": "貌似我已经找到所有可以读取的虚咒残卷了...",
+  "hexvoid.msg.item.mind_staff.count": "貌似我的意志不足以一次性转化如此多的物品...",
+  "hexvoid.msg.item.mind_staff.health": "貌似我的意志已不足以转化物品...",
+  "hexvoid.msg.item.mind_staff.store": "貌似我已经触摸到了凝识法杖储存媒质的上限...？",
+  "hexvoid.msg.item.mind_staff.showcost": "消耗: ",
+  "hexvoid.msg.item.mind_staff.showcost.media": "粉",
+  "hexvoid.msg.spell.cos": "你忽然感觉自己的身体消失了\n随即你意识到是载体已不再存在于世界\n高维的存在已抹杀了作物质世界探针的身体...",
+  "hexvoid.msg.spell.ctv.pos": "...貌似不起作用？大概是深度对不上吧...",
+  "hexvoid.msg.spell.ctv.block": "...貌似不起作用？大概是方块对不上吧...",
+  "hexvoid.msg.spell.wm": "可织入媒质的物品",
+  "hexvoid.msg.spell.healing": "可治疗的生物",
+  // others
+  "hexvoid.tooltip.media_amount": "含有: %s/%s (%s)",
+  // patchouli book
+  // category descriptions
+  "hexvoid.category.research": "虚咒残卷-探索历程",
+  "hexvoid.category.catalog": "虚咒残卷-总目录",
+  "hexvoid.category.research.desc": "我有幸发现了一些古代的某些咒术师留下的研究手稿，不幸的是其中大部分都难以辨认，幸运的是有一部分可以直接辨读出来，而且似乎这就是研究的开头部分，不过手稿所记录的内容看起来貌似非常...反常识?",
+  "hexvoid.category.catalog.desc": "这是已破译的研究手稿的总目录，在此可以找到所有已记录的手稿内容",
+  "hexvoid.category.research.deepworld": "世界深处",
+  "hexvoid.category.deepworld.desc": "花了好长的时间来辨认，貌似这就是手稿的开头了，记述了一些关于世界深处的研究内容",
+  // entries
+  "hexvoid.entry.deepworld": "世界深处",
+  "hexvoid.entry.legacy_of_vanished": "消泯者残遗",
+  "hexvoid.entry.enlightening_apple": "启迪禁果",
+  "hexvoid.entry.calledboom": "空间撕裂",
+  "hexvoid.entry.clear_draws": "整理思维",
+  "hexvoid.entry.mind_staff": "凝识法杖",
+  "hexvoid.entry.weaving_media": "织入媒质",
+  "hexvoid.entry.healing": "重塑形体",
+  // pages
+  //research
+  "hexvoid.entry.research.deepworld": "世界深处",
+  "hexvoid.page.research.deepworld": "我发现了一些奇怪的研究，它们似乎，或者说看起来非常荒谬，我不确定它们的真实性。不过上面提到了一种特殊的法术，可以使我得知一些世界深处的秘密，但这似乎$(c)$(o)非常危险$()",
+  "hexvoid.page.research.legacy_of_vanished": "尽管令人震惊，但是不得不承认这些研究居然是真的！不过接下来的部分即使我已辨读出来，却貌似经过了加密，除了两篇研究之外全都是无法理解的错乱字符，或许我得找点方法破译？",
+  //catalog
+  "hexvoid.page.catalog.deepworld": "具体的法术如下：",
+  "hexvoid.page.deepworld.channel_to_world1": "打开通往虚空的通道，需在地底使用，并确保脚下是“世界最底层最硬的方块”$(br)",
+  "hexvoid.page.deepworld.channel_to_world2": "研究的手稿上还特意批注了“必须确保自己能随时处于$(o)$(5)飞行$()或$(o)$(5)漂浮$()状态，以免掉入无可见底的空间！！！$()”，想来先人之见大概不是没有原因的吧$(br)消耗2个充能紫水晶",
+  "hexvoid.page.deepworld.clear_draws": "将我的法术视野清空，如此便可作画更多的图案而无需借助核心之类的物品，但貌似不由我的意识施法就会产生错误，不过貌似此种图案还有一变种，功效尚未破译",
+  "hexvoid.page.patterns.calledboom1": "一种仿造摧解的空间结构的构造法术，效果类似于爆炸，然而可用等级高很多",
+  "hexvoid.page.patterns.calledboom2": "在给定位置制造指定强度的仿摧解现象，等级最大为100级，消耗强度^2个紫水晶粉",
+  "hexvoid.page.items.mind_staff1": "在手稿中提到了一种特殊的方法可以用普通的木棍作简易法杖：手持木棍按住$(o)$(5)SHIFT$()并$(o)$(5)右键$()，制作法杖的过程会使意识损蚀少许",
+  "hexvoid.page.items.mind_staff2": "这样造出的法杖被称为“$(o)$(5)凝识法杖$()”，这种法杖极其脆弱，只需1次施法即损坏，不过似乎此种法杖可以起到类似$(l:catalog/clear_draws)整理思维$()的作用，且法杖本身另有用途，不过我还没能解读另一部分的研究",
+  "hexvoid.page.items.enlightening_apple1": "一种失落的技术，用于制造出可以令人知晓帷幕之后的知识的苹果，但是如今似乎差了点什么",
+  "hexvoid.page.items.enlightening_apple2": "貌似缺少了什么步骤，导致制造出的苹果会使人丧失行动能力几秒，大概是意识接受了大量的知识以至于遭到了损伤吧",
+  "hexvoid.page.legacy_of_vanished.weaving_media": "向给定物品中织入媒质，具体的可织入媒质物品见下页。向任何物品中织入媒质貌似都会耗费10个充能紫水晶",
+  "hexvoid.page.legacy_of_vanished.weaving_media.recipe/mind_staff": "向凝识法杖中织入媒质，便可加工为不会损坏且可以在使用时将副手的媒质吸纳并储存的完成品",
+  "hexvoid.page.legacy_of_vanished.weaving_media.recipe/enlightening_apple": "向启迪禁果中织入媒质，便可制成无副作用的启迪苹果",
+  "hexvoid.page.legacy_of_vanished.healing": "使用媒质对有生命的生物重塑其身躯的法术。由于重塑时参照的组织不同，因此消耗也不同。对目标生物恢复的生命值最多不会超过其原来的生命值上限。",
+  "hexvoid.page.legacy_of_vanished.healing/postscript": "虽然这个法术的媒质消耗看起来总是随机的，但是我发现当预期恢复的生命值非常接近0时，消耗也会趋近于0。但是若预期恢复的生命值非常大时，消耗将会趋近于一个在一定范围内的常量，而预期恢复的生命值趋近于这个常量本身时，消耗竟会趋近于另一个更大些的常数，也就是说预期恢复的生命值与媒质消耗之间并不只是单调递增的关系...总之不知道为什么这个法术的媒质消耗计算起来这么复杂，或许是因为生命本身就是极其复杂的东西？"
+}

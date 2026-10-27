@@ -1,0 +1,29 @@
+{
+  "name": "hexvoid.entry.weaving_media",
+  "category": "hexcasting:catalog",
+  "icon": "minecraft:loom",
+  "sortnum": 5,
+  "advancement": "hexvoid:research",
+  "pages": [
+    {
+      "type": "hexcasting:pattern",
+      "op_id": "hexvoid:weaving_media",
+      "anchor": "hexvoid:weaving_media",
+      "input": "entity",
+      "output": "entity",
+      "text": "hexvoid.page.legacy_of_vanished.weaving_media"
+    },
+    {
+      "type": "hexcasting:weaving_media",
+      "processor": "mys.hexvoid.interop.patchouli.WeavingMediaProcessor",
+      "recipe": "hexvoid:weaving_media/mind_staff",
+      "text": "hexvoid.page.legacy_of_vanished.weaving_media.recipe/mind_staff"
+    },
+    {
+      "type": "hexcasting:weaving_media",
+      "processor": "mys.hexvoid.interop.patchouli.WeavingMediaProcessor",
+      "recipe": "hexvoid:weaving_media/enlightening_apple",
+      "text": "hexvoid.page.legacy_of_vanished.weaving_media.recipe/enlightening_apple"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "hexvoid:test_item"
+    }
+  },
+  "result": {
+    "id": "hexvoid:test_block"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "name": "hexvoid.category.catalog",
+  "icon": "hexvoid:lore_fragment",
+  "description": "hexvoid.category.catalog.desc",
+  "advancement": "hexvoid:lore/research",
+  "sortnum": 999
+}

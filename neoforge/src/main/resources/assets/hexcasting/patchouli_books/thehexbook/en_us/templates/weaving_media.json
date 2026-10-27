@@ -1,0 +1,43 @@
+{
+  "processor": "mys.hexvoid.interop.patchouli.WeavingMediaProcessor",
+  "components": [
+    {
+      "type": "patchouli:custom",
+      "class": "at.petrak.hexcasting.interop.patchouli.LookupPatternComponent",
+      "x": 58,
+      "y": 50,
+      "op_id": "#op_id",
+      "hex_size": "#hex_size"
+    },
+    {
+      "type": "patchouli:header",
+      "text": "#header",
+      "x": -1,
+      "y": -1
+    },
+    {
+      "type": "patchouli:item",
+      "x": 10,
+      "y": 80,
+      "item": "#input"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "==============>",
+      "x": 30,
+      "y": 82
+    },
+    {
+      "type": "patchouli:item",
+      "x": 90,
+      "y": 80,
+      "item": "#output",
+      "link_recipe": true
+    },
+    {
+      "type": "patchouli:text",
+      "text": "#text",
+      "y": 100
+    }
+  ]
+}

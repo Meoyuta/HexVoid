@@ -1,0 +1,15 @@
+{
+  "entries": [
+    "hexvoid:lootable_woodland_mansion",
+    "hexvoid:lootable_nether_bridge",
+    "hexvoid:lootable_desert_pyramid",
+    "hexvoid:lootable_end_city_treasure",
+    "hexvoid:lootable_stronghold_library",
+    "hexvoid:lootable_buried_treasure",
+    "hexvoid:lootable_igloo_chest",
+    "hexvoid:lootable_ancient_city",
+    "hexvoid:lootable_ancient_city_ice_box",
+    "hexvoid:lootable_simple_dungeon"
+  ],
+  "replace": false
+}
